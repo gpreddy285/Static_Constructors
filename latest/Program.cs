@@ -6,41 +6,45 @@ using System.Threading.Tasks;
 
 namespace latest
 {
-    class student
-    {
-        int sid;
-        string sname;
-        static string college;
+    //class student
+    //{
+    //    int sid;
+    //    string sname;
+    //    static string college;
 
-        public student(int sid, string sname)
-        {
-            this.sid = sid;
-            this.sname = sname;
-        }
-        static student()
-        {
-            college = "Andhra University";
-        }
-        public void studentdisplay()
-        {
-            Console.WriteLine("Student id is :" + sid);
-            Console.WriteLine("Student name is :" + sname);
-        }
-        public static void collegedisplay()
-        {
-            Console.WriteLine("College name is :" + college);
-        }
+    //    public student(int sid, string sname)
+    //    {
+    //        this.sid = sid;
+    //        this.sname = sname;
+    //    }
+    //    static student()
+    //    {
+    //        college = "Andhra University";
+    //    }
+    //    public void studentdisplay()
+    //    {
+    //        Console.WriteLine("Student id is :" + sid);
+    //        Console.WriteLine("Student name is :" + sname);
+    //    }
+    //    public static void collegedisplay()
+    //    {
+    //        Console.WriteLine("College name is :" + college);
+    //    }
 
-    }
+    //}
 
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            student sn = new student(332, "prasad");
-            sn.studentdisplay();
-            student.collegedisplay();
+            //student sn = new student(332, "prasad");
+            //sn.studentdisplay();
+            //student.collegedisplay();Emp
+            Employee emp1 = new Employee(332,"prasad",120000);
+            emp1.EmpDisplay();
+            Employee.EmpCompany();
+            emp1.hikesalary();
 
         }
     }
