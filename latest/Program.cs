@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace latest
+{
+    class student
+    {
+        int sid;
+        string sname;
+        static string college;
+
+        public student(int sid, string sname)
+        {
+            this.sid = sid;
+            this.sname = sname;
+        }
+        static student()
+        {
+            college = "Andhra University";
+        }
+        public void studentdisplay()
+        {
+            Console.WriteLine("Student id is :" + sid);
+            Console.WriteLine("Student name is :" + sname);
+        }
+        public static void collegedisplay()
+        {
+            Console.WriteLine("College name is :" + college);
+        }
+
+    }
+
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            student sn = new student(332, "prasad");
+            sn.studentdisplay();
+            student.collegedisplay();
+
+        }
+    }
+}
