@@ -6,30 +6,26 @@ using System.Threading.Tasks;
 
 namespace latest
 {
-    public class Bank
+    public class BankEx
     {
         private double balance;
+        private int pin;
         public void Deposit(double amount)
         {
-            if (amount > 0)
-            {
-                balance = balance + amount;
-            }
+            balance = balance + amount;
         }
-        public void Withdraw(double amount)
+        public void Withdraw(int pin, double amount)
         {
-            if (amount <= balance)
+            if (amount < balance && pin == 1234)
             {
                 balance = balance - amount;
             }
         }
-        public double Getbalance()
+       public double totalbalance()
         {
-            {
-                return balance;
-            }
+            return balance;
         }
-
-
     }
+
 }
+

@@ -45,11 +45,17 @@ namespace latest
             //emp1.EmpDisplay();
             //Employee.EmpCompany();
             //emp1.hikesalary();
-            Bank bn = new Bank();
-            bn.Deposit(3000);
-            bn.Withdraw(1000);
-            double result = bn.Getbalance();
-            Console.WriteLine("Total Balance Is :" + result);
+            //Bank bn = new Bank();
+            //bn.Deposit(3000);
+            //bn.Withdraw(1000);
+            //double result = bn.Getbalance();
+            //Console.WriteLine("Total Balance Is :" + result);
+            BankEx be = new BankEx();
+            be.Deposit(10000);
+            be.Withdraw(1234, 6500);
+            double result1 = be.totalbalance();
+            Console.WriteLine("Total Balance in your account is :" + result1);
+
 
 
         }
