@@ -20,6 +20,10 @@ namespace latest
             {
                 balance = balance - amount;
             }
+            else
+            {
+                Console.WriteLine("please check the pin you entered");
+            }
         }
        public double totalbalance()
         {
